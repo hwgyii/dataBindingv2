@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Slambook</string>
+    <string name="nameLabel">Name:</string>
+    <string name="helloLabel">Hello!</string>
+    <string name="nameLabel1">Name</string>
+    <string name="nicknameLabel">Nickname:</string>
+    <string name="ageLabel">Age:</string>
+    <string name="birthdayLabel">Birthday:</string>
+    <string name="courseLabel">Course:</string>
+    <string name="phone_numberLabel">Phone Number:</string>
+    <string name="favorite_colorLabel">Favorite Color:</string>
+    <string name="ultimate_dreamLabel">Ultimate Dream:</string>
+    <string name="secretCrushLabel">Secret Crush:</string>
+    <string name="message_for_meLabel">Message For Me:</string>
+    <string name="submitLabel">Submit</string>
+    <string name="enterAgeLabel">Age:</string>
+    <string name="nicknameHint">Nickname</string>
+    <string name="ageHint">Age</string>
+    <string name="birthdayHint">Birthday</string>
+    <string name="courseHint">Course</string>
+    <string name="phoneNumberHint">Phone Number</string>
+    <string name="favoriteColorHint">Favorite Color</string>
+    <string name="ultimateDreamHint">Ultimate Dream</string>
+    <string name="secretCrushHInt">Secret Crush</string>
+    <string name="messageForMeHint">Message For Me</string>
+</resources>

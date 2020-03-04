@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="name"
+            type="com.example.yukit_exer4_slambook.Name" />
+        <variable
+            name="age"
+            type="com.example.yukit_exer4_slambook.Age" />
+        <variable
+            name="nickname"
+            type="com.example.yukit_exer4_slambook.Nickname" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/helloTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus"
+                android:text="@string/helloLabel"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus"
+                android:text="@={name.name}"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/namePlainText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/arbutus"
+                android:hint="@string/nameLabel1"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:autofillHints=" " />
+
+            <TextView
+                android:id="@+id/nicknameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus"
+                android:text="@={nickname.nickname}"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/nicknamePlainText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/arbutus"
+                android:hint="@string/nicknameHint"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:autofillHints=" " />
+
+            <TextView
+                android:id="@+id/ageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus"
+                android:text="@={age.age}"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/agePlainText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/arbutus"
+                android:hint="@string/ageHint"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:autofillHints=" "
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/birthdayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus"
+                android:text="@string/birthdayLabel"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/birthdayDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/arbutus"
+                android:hint="@string/birthdayHint"
+                android:inputType="date"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:autofillHints=" "
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/courseTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus"
+                android:text="@string/courseLabel"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/coursePlainText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/arbutus"
+                android:hint="@string/courseHint"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:autofillHints=" " />
+
+            <TextView
+                android:id="@+id/phoneNumTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus"
+                android:text="@string/phone_numberLabel"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/phoneNumPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/arbutus"
+                android:hint="@string/phoneNumberHint"
+                android:inputType="phone"
+                android:textSize="30sp"
+                android:autofillHints=" " />
+
+            <TextView
+                android:id="@+id/colorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus"
+                android:text="@string/favorite_colorLabel"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/colorPlainText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/arbutus"
+                android:hint="@string/favoriteColorHint"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:autofillHints=" " />
+
+            <TextView
+                android:id="@+id/dreamTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus"
+                android:text="@string/ultimate_dreamLabel"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/dreamPlainText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/arbutus"
+                android:hint="@string/ultimateDreamHint"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:autofillHints=" " />
+
+            <TextView
+                android:id="@+id/crushTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus"
+                android:text="@string/secretCrushLabel"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/crushPlainText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/arbutus"
+                android:hint="@string/secretCrushHInt"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:autofillHints=" " />
+
+            <TextView
+                android:id="@+id/messageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arbutus"
+                android:text="@string/message_for_meLabel"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/messageMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/arbutus"
+                android:gravity="start|top"
+                android:hint="@string/messageForMeHint"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:autofillHints=" " />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF0000"
+                android:fontFamily="@font/arbutus"
+                android:text="@string/submitLabel"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
